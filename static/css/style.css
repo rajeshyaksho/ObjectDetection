@@ -1,0 +1,17 @@
+/* style.css */
+.container {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+video, canvas {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+    margin-top: 20px;
+}
