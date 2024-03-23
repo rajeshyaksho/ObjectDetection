@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Object Detection</title>
+</head>
+<body>
+    <h1>Welcome to Object Detection Website</h1>
+    <p>This is the official website for our object detection project. <br> 
+        It utilizes a deep learning model called YOLO (You Only Look Once) and computer vision techniques to perform real-time object detection from the video catured by a webcam.<br>
+        In Real-world, it is used in Autonomous behicles, Healthcare: medical imaging analysis, Augmented Reality and Virtual Reality.
+    </p>
+
+    <img id="webcam-feed" src="{{ url_for('detect') }}" alt="Object Detection" width="640" height="480">
+    <script>
+        // Auto-refresh the webcam feed every second
+        setInterval(() => {
+            document.getElementById('webcam-feed').src = "{{ url_for('detect') }}";
+        }, 1000);
+    </script>
+</body>
+</html>
