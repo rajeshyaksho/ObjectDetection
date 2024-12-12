@@ -25,7 +25,3 @@ Acknowledgements
 - The YOLO object detection algorithm: YOLOv3 Paper
 - Flask web framework: Flask Documentation
 - OpenCV library: OpenCV Documentation
-
-Contributors:
-- Rajesh Yaksho
-- Nishchal Shrestha
